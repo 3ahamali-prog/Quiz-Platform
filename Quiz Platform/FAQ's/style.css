@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #0b0f2a;
+  color: #fff;
+}
+
+.header {
+    width: 1400px;
+    padding: 15px 0;
+
+    .container {
+        width: 1440px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 10px;
+
+        .logo {
+            width: 200px;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .nav {
+            max-width: 1440px;
+            width: 668px;
+            display: flex;
+            gap: 22px;
+
+            a {
+                color: #cfcfcf;
+                text-decoration: none;
+                font-size: 14px;
+                transition: 0.3s;
+
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
+
+        .btn {
+          display: flex;
+            width: 142px;
+            padding: 8px 25px;
+            border-radius: 20px;
+            background: linear-gradient(45deg, #a855f7, #ec4899);
+            color: white;
+            text-decoration: none;
+            font-size: 13px;
+        }
+    }
+}
+
+
+.faq-section {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #1a0b3a, #0b0f2a);
+  text-align: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.faq-section h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #aaa;
+  margin-bottom: 40px;
+}
+
+.faq-item {
+  margin-bottom: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #1b1f4b, #2a1a5e);
+}
+
+.faq-question {
+  width: 100%;
+  padding: 18px;
+  background: transparent;
+  border: none;
+  color: #fff;
+  text-align: left;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.faq-question span {
+  font-size: 18px;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.4s ease;
+  padding: 0 18px;
+  background: linear-gradient(90deg, #ff00cc, #3333ff);
+}
+
+.faq-answer p {
+  font-size: 13px;
+  padding: 15px 0;
+}
+
+.faq-answer.active {
+  max-height: 200px;
+}
+
+.cta-section {
+  padding: 70px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #ff00cc, #3333ff);
+}
+
+.cta-content h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.cta-content p {
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.cta-btn {
+  padding: 12px 30px;
+  background: #fff;
+  color: #3333ff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.cta-btn:hover {
+  background: #000;
+  color: #fff;
+}
+
+.footer {
+    background: linear-gradient(135deg, #b517f1, #4b2abf);
+    color: #fff;
+    padding: 60px 0 20px;
+    margin-top: 145px;
+
+    .footer-container {
+        width: 90%;
+        max-width: 1200px;
+        height: 280px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1.2fr;
+        gap: 40px;
+    }
+
+    h3,
+    h4 {
+        margin-bottom: 15px;
+        font-weight: 600;
+        
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 1.7;
+        opacity: 0.9;
+
+
+    }
+
+    ul {
+        list-style: none;
+
+        li {
+            margin-bottom: 10px;
+
+            a {
+                color: #fff;
+                text-decoration: none;
+                font-size: 14px;
+                opacity: 0.85;
+                transition: 0.3s;
+
+                &:hover {
+                    opacity: 1;
+                    text-decoration: underline;
+                    text-decoration-line: line-through;
+                }
+
+            }
+        }
+    }
+
+    .contact p {
+        margin-bottom: 10px;
+
+        .contact-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    .footer-bottom {
+        max-width: 1300px;
+        margin-top: 40px;
+        text-align: center;
+        font-size: 13px;
+        opacity: 80%;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        padding-top: 15px;
+    }
+}

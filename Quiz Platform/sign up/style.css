@@ -1,0 +1,115 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: radial-gradient(circle at 20% 30%, #001f3f, #000 40%),
+                radial-gradient(circle at 80% 70%, #6a00ff, #000 40%);
+    background-color:#000;
+    color:#fff;
+}
+
+.container{
+    width:100%;
+    max-width:420px;
+    padding:40px 30px;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:25px;
+    font-weight:500;
+}
+
+/* Row for first & last name */
+.name-row{
+    display:flex;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+.input-box{
+    position:relative;
+    width:100%;
+    margin-bottom:20px;
+}
+
+.input-box input{
+    width:100%;
+    padding:14px 45px 14px 15px;
+    border-radius:10px;
+    border:2px solid #a100ff;
+    outline:none;
+    background:rgba(255,255,255,0.05);
+    color:#fff;
+    font-size:14px;
+    transition:0.3s;
+}
+
+.input-box input:focus{
+    box-shadow:0 0 10px #a100ff;
+}
+
+.toggle-eye{
+    position:absolute;
+    right:15px;
+    top:50%;
+    transform:translateY(-50%);
+    cursor:pointer;
+    font-size:16px;
+    color:#ccc;
+}
+
+.terms{
+    font-size:12px;
+    color:#aaa;
+    margin-bottom:20px;
+}
+
+.terms a{
+    color:#fff;
+    text-decoration:none;
+}
+
+.btn{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:30px;
+    background:linear-gradient(90deg,#a100ff,#ff00cc);
+    color:#fff;
+    font-size:15px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.btn:hover{
+    opacity:0.85;
+}
+
+.login-link{
+    text-align:center;
+    margin-top:15px;
+    font-size:13px;
+}
+
+.login-link a{
+    color:#ff4d4d;
+    text-decoration:none;
+}
+@media(max-width:480px){
+    .container{
+        padding:25px 20px;
+    }
+
+    .name-row{
+        flex-direction:column;
+    }
+}

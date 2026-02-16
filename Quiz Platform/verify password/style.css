@@ -1,0 +1,97 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: radial-gradient(circle at 20% 30%, #001f3f, #000 40%),
+                radial-gradient(circle at 80% 70%, #6a00ff, #000 40%);
+    background-color:#000;
+    color:#fff;
+}
+
+.container{
+    width:100%;
+    max-width:420px;
+    padding:40px 30px;
+    text-align:center;
+}
+
+h2{
+    font-weight:500;
+    margin-bottom:10px;
+}
+
+p{
+    font-size:13px;
+    color:#ccc;
+    margin-bottom:25px;
+}
+
+.otp-box{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    margin-bottom:25px;
+}
+
+.otp-box input{
+    width:45px;
+    height:50px;
+    text-align:center;
+    font-size:18px;
+    border-radius:10px;
+    border:2px solid #a100ff;
+    background:rgba(255,255,255,0.05);
+    color:#fff;
+    outline:none;
+    transition:0.3s;
+}
+
+.otp-box input:focus{
+    box-shadow:0 0 10px #a100ff;
+}
+
+.btn{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:30px;
+    background:linear-gradient(90deg,#a100ff,#ff00cc);
+    color:#fff;
+    font-size:15px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.btn:hover{
+    opacity:0.85;
+}
+
+.resend{
+    margin-top:15px;
+    font-size:13px;
+}
+
+.resend a{
+    color:#fff;
+    text-decoration:none;
+}
+
+/* Responsive */
+@media(max-width:480px){
+    .container{
+        padding:25px 20px;
+    }
+
+    .otp-box input{
+        width:40px;
+        height:45px;
+    }
+}

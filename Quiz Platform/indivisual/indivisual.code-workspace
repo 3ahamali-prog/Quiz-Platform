@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../main header page"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "indivisual"
+	}
+}
